@@ -961,10 +961,18 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-xl) 0; /* equal top & bottom padding */
   text-align: center;
   overflow: hidden;
+
+  /* Equal top & bottom space inside */
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+
+  min-height: 100vh; /* makes hero section fill viewport height */
 }
+
 
 .hero-bg {
   position: absolute;
